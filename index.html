@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="work.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="bg-container col-12 pt-4 pb-4">
+        <div class="col-12 d-flex flex-row justify-content-center">
+          <form class="search-box">
+            <label>
+              <input type="text" placeholder="Enter the city" class="text" id="valuesearch">
+            </label>
+            <button class="button">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="col-12">
+          <div id="city" class="city-container d-flex flex-row justify-content-center">
+            <h1 class="head">London</h1>
+            <img src="https://flagsapi.com/GB/shiny/32.png" alt="london" class="flag-image">
+          </div>
+        </div>
+
+        <div id="temperature" class="text-center">
+          <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather icon" class="image">
+          <figcaption class="degree">
+            <span>0</span><sup>°c</sup>
+          </figcaption>
+          <h1 id="description" class="para">Overcast clouds</h1>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+          <div class="col-4 col-md-3">
+            <div class="box text-center b1">
+              <h1 class="word">Clouds</h1>
+              <i class="fa-solid fa-cloud icon1"></i>
+              <li class="list"><span id="clouds" class="word">74</span>%</li>
+            </div>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="box text-center b2 p-1 pt-3">
+              <h1 class="word">Humidity</h1>
+              <i class="fa-solid fa-droplet icon2"></i>
+              <li class="list"><span id="humidity" class="word">55</span>%</li>
+            </div>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="box text-center b3">
+              <h3 class="word">Pressure</h3>
+              <i class="fa-solid fa-gauge icon3"></i>
+              <li class="list"><span id="pressure" class="word text-center">1001</span> hPa</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="work.js"></script>
+</body>
+</html>
